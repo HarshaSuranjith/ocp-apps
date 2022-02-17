@@ -1,0 +1,23 @@
+apiVersion: v1
+data:
+  MY_STRING: string1
+kind: ConfigMap
+metadata:
+  name: dev
+  namespace: rdc-php-detail
+---
+apiVersion: v1
+data:
+  MY_STRING: string2
+kind: ConfigMap
+metadata:
+  name: stage
+  namespace: rdc-php-detail
+---
+apiVersion: v1
+data:
+  MY_STRING: string3
+kind: ConfigMap
+metadata:
+  name: prod
+  namespace: rdc-php-detail
